@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: #f9fafb;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 850px;
+
+    background: #1f2937;
+    padding: 35px;
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+h1 {
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #9ca3af;
+    margin-bottom: 40px;
+}
+
+/* Game Section */
+
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.player-card {
+    flex: 1;
+    background: #374151;
+    padding: 25px 15px;
+    border-radius: 14px;
+}
+
+.player-card h2 {
+    margin-bottom: 20px;
+}
+
+.choice-display {
+    font-size: 65px;
+    margin: 20px 0;
+    min-height: 75px;
+}
+
+.player-card p {
+    color: #9ca3af;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Player Choices */
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.choice-btn {
+    background: #1f2937;
+    color: white;
+    border: 2px solid #4b5563;
+
+    border-radius: 10px;
+    padding: 12px 8px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.choice-btn:hover {
+    background: #2563eb;
+    border-color: #60a5fa;
+    transform: translateY(-3px);
+}
+
+.choice-btn span {
+    display: block;
+    font-size: 11px;
+    margin-top: 7px;
+}
+
+.choice-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Player 2 */
+
+.player2-status {
+    color: #9ca3af;
+    font-size: 13px;
+    margin-top: 20px;
+    min-height: 20px;
+}
+
+/* VS */
+
+.vs {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f87171;
+}
+
+/* Result */
+
+.result-container {
+    background: #111827;
+    margin-top: 35px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.result-container h2 {
+    color: #fbbf24;
+    margin-bottom: 10px;
+}
+
+.result-container p {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 650px) {
+
+    .game-container {
+        padding: 20px 12px;
+    }
+
+    .game {
+        flex-direction: column;
+    }
+
+    .player-card {
+        width: 100%;
+    }
+
+    .vs {
+        margin: 5px 0;
+    }
+
+}

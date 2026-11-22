@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="game-container">
+
+        <h1>Rock Paper Scissors</h1>
+        <p class="subtitle">Play with a Friend!</p>
+
+        <section class="game">
+
+            <!-- Player 1 -->
+            <div class="player-card">
+
+                <h2>Player 1</h2>
+
+                <div class="choice-display" id="player-choice">
+                    ❔
+                </div>
+
+                <p>Player 1's Choice</p>
+
+                <div class="choices">
+                    <button class="choice-btn" id="rock" data-choice="rock">
+                        ✊
+                        <span>Rock</span>
+                    </button>
+
+                    <button class="choice-btn" id="paper" data-choice="paper">
+                        ✋
+                        <span>Paper</span>
+                    </button>
+
+                    <button class="choice-btn" id="scissors" data-choice="scissors">
+                        ✌️
+                        <span>Scissors</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="vs">VS</div>
+
+            <!-- Player 2 -->
+            <div class="player-card">
+
+                <h2>Player 2</h2>
+
+                <div class="choice-display" id="player2-choice">
+                    ❔
+                </div>
+
+                <p>Player 2's Choice</p>
+
+                <div class="choices">
+                    <button class="choice-btn" id="rock2" data-choice="rock">
+                        ✊
+                        <span>Rock</span>
+                    </button>
+
+                    <button class="choice-btn" id="paper2" data-choice="paper">
+                        ✋
+                        <span>Paper</span>
+                    </button>
+
+                    <button class="choice-btn" id="scissors2" data-choice="scissors">
+                        ✌️
+                        <span>Scissors</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Result -->
+        <section class="result-container">
+            <h2 id="result">Make Your Move!</h2>
+            <p id="result-message">
+                Both players should choose to start.
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>

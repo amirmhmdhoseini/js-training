@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memory Cards</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="app-container">
+
+        <header class="app-header">
+            <h1>Memory Cards</h1>
+            <p>Create your cards and test your memory!</p>
+        </header>
+
+        <!-- Add New Card -->
+
+        <section class="add-card-section">
+
+            <h2>Add a New Card</h2>
+
+            <form id="card-form">
+
+                <div class="form-group">
+                    <label for="card-question">Question</label>
+                    <input
+                        type="text"
+                        id="card-question"
+                        placeholder="Enter your question..."
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="card-answer">Answer</label>
+                    <textarea
+                        id="card-answer"
+                        placeholder="Enter your answer..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" id="add-card-btn">
+                    Add Card
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Cards List -->
+
+        <section class="cards-section">
+
+            <div class="cards-header">
+                <h2>My Cards</h2>
+                <p>Total Cards: <span id="card-count">0</span></p>
+            </div>
+
+            <div class="cards-container" id="cards-container">
+
+                <!-- Cards will be added here using JavaScript -->
+
+                <p class="empty-message" id="empty-message">
+                    No cards yet. Add your first card!
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
