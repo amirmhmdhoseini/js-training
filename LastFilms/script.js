@@ -1,5 +1,4 @@
-// با همین api key کار میکنه اگه خواستید تست بگیرید
-const API_KEY = 'b13dd907'
+const API_KEY = 'YOUR_API_KEY'
 
 const form = document.getElementById("movie-form")
 const input = document.getElementById("movie-search")
