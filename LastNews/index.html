@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Latest News</h1>
+            <p>Stay updated with the latest headlines</p>
+        </header>
+
+        <section class="filters">
+            <label for="category-select">Choose a category:</label>
+            <select id="category-select">
+                <option value="general">General</option>
+                <option value="business">Business</option>
+                <option value="technology">Technology</option>
+                <option value="sports">Sports</option>
+                <option value="health">Health</option>
+                <option value="science">Science</option>
+                <option value="entertainment">Entertainment</option>
+            </select>
+            <button id="search-btn">Get News</button>
+        </section>
+
+        <p id="loading">Loading news...</p>
+
+        <p id="error-message"></p>
+
+        <main id="news-container">
+            <!-- News cards will be added here -->
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
