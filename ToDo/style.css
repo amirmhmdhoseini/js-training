@@ -55,6 +55,11 @@ button {
     margin-bottom: 15px;
 }
 
+#reload-btn {
+    background-color: #16a34a;
+    margin-right: 5px;
+}
+
 #clear-btn {
     background-color: #dc2626;
 }

@@ -1,9 +1,11 @@
+
 const form = document.getElementById('todo-form')
 const taskInput = document.getElementById('todo-input')
 const todoList = document.getElementById('todo-list')
 const count = document.getElementById('task-count')
 const clearButton = document.getElementById('clear-btn')
 const emptyMessage = document.getElementById('empty-message')
+const reloadButton = document.getElementById('reload-btn')
 
 let tasks = JSON.parse(localStorage.getItem('tasks')) || []
 
@@ -56,6 +58,10 @@ clearButton.addEventListener('click', () => {
     tasks = []
     localStorage.setItem('tasks', JSON.stringify(tasks))    
     renderTasks()
+})
+
+reloadButton.addEventListener('click', () => {
+    location.reload()
 })
 
 renderTasks()
