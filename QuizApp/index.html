@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- Start Screen -->
+        <section id="start-screen" class="screen start-screen">
+
+            <div class="logo">QUIZ<span>MASTER</span></div>
+
+            <div class="hero-icon">🧠</div>
+
+            <h1>Challenge Your Mind!</h1>
+
+            <p class="subtitle">
+                Test your knowledge and discover how much you know.
+            </p>
+
+            <div class="quiz-info">
+                <div class="info-item">
+                    <span class="info-icon">📝</span>
+                    <strong>10</strong>
+                    <small>Questions</small>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">⏱️</span>
+                    <strong>10</strong>
+                    <small>Minutes</small>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">🏆</span>
+                    <strong>100</strong>
+                    <small>Total Points</small>
+                </div>
+            </div>
+
+            <button id="start-btn" class="primary-btn">
+                Start Quiz
+                <span>→</span>
+            </button>
+
+            <p class="footer-text">Are you ready? Let's begin!</p>
+
+        </section>
+
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="screen quiz-screen" hidden>
+
+            <div class="quiz-top">
+                <div class="logo">QUIZ<span>MASTER</span></div>
+
+                <div class="question-counter">
+                    Question <span id="current-question">1</span> / 10
+                </div>
+            </div>
+
+            <div class="progress-info">
+                <span>Your Progress</span>
+                <span id="progress-percent">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+
+            <div class="question-card">
+
+                <div class="question-label">QUESTION</div>
+
+                <h2 id="question-text">
+                    Question text will appear here
+                </h2>
+
+                <div id="options-container" class="options-container">
+                    <!-- Options will be added with JavaScript -->
+                </div>
+
+            </div>
+
+            <div class="quiz-bottom">
+
+                <p id="answer-hint">Choose the correct answer</p>
+
+                <button id="next-btn" class="primary-btn" disabled>
+                    Next Question
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Result Screen -->
+        <section id="result-screen" class="screen result-screen" hidden>
+
+            <div class="logo">QUIZ<span>MASTER</span></div>
+
+            <div class="result-icon">🏆</div>
+
+            <h1>Quiz Completed!</h1>
+
+            <p class="subtitle">
+                Great job! Here is your result.
+            </p>
+
+            <div class="score-card">
+
+                <p>Your Score</p>
+
+                <div class="score-circle">
+                    <strong id="final-score">0</strong>
+                    <span>/ 10</span>
+                </div>
+
+                <h3 id="result-message">Keep practicing!</h3>
+
+                <div class="result-stats">
+                    <div>
+                        <strong id="correct-count">0</strong>
+                        <small>Correct</small>
+                    </div>
+
+                    <div>
+                        <strong id="wrong-count">0</strong>
+                        <small>Wrong</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2 class="review-title">Answer Review</h2>
+
+            <div id="review-container">
+                <!-- Answers review will be added with JavaScript -->
+            </div>
+
+            <button id="restart-btn" class="primary-btn">
+                Try Again
+                <span>↻</span>
+            </button>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
